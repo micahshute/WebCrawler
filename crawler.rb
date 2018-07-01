@@ -224,17 +224,4 @@ UD_URL = "http://www.ece.udel.edu"
 seed_page = "University_Of_Delaware_ECE"
 
 spider = Crawler.new(UD_URL, UD_URL, seed_page)
-# spider.crawl_and_parse_domain
-# spider.recrawl_existing_tree
-
-# for i in 1..spider.link_tree.max_level do
-#     puts spider.link_tree.nodes_at_level[i].map{|node| node.data}
-# end
-# puts spider.link_tree.node_count
-
-spider.crawl_domain_without_tree_save_list_links
-# spider.crawl_domain_without_tree
-
-# spider.crawl_and_parse
-# spider.crawl_without_tree
-
+spider.crawl_and_parse_domain
